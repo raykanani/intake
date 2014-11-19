@@ -15,9 +15,6 @@
     }
   }
   @else {
-    @include background-image(
-      linear-gradient(bottom, rgba($black, .5) 0%, rgba(mix($black, $white, 55%), .5) 100%)
-    );
     &:active {
       @include background-image(
         linear-gradient(top, rgba($black, .5) 0%, rgba(mix($black, $white, 55%), .5) 100%)
@@ -28,13 +25,10 @@
     text-decoration: none;
     text-transform: lowercase;
     padding: $padding;
-    border-radius: $px * 5;
     border: none;
     line-height: 1em;
     cursor: pointer;
     font-size: 1rem;
-    &:before {
-      text-shadow: 1 * $px 1 * $px $black, -1 * $px -1 * $px $black;
-    }
+    border-radius: 0;
   }
 }

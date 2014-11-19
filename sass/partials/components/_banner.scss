@@ -46,7 +46,7 @@
 
     [ng-click="IntakeDownload()"],
     [name="importFileStart"] {
-      @include button($secondary);
+      @include button($primary);
       @include breakpoint(543px) {
         font-size: .75em;
       }
@@ -55,7 +55,7 @@
       &:before {
         @extend %icon;
         content: 'export';
-        color: $primary;
+        color: $white;
         padding-right: .5em;
         display: inline-block;
         // margin-bottom: -.15em;
